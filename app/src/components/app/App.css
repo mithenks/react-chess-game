@@ -1,0 +1,85 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 20vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #0b3847;
+  min-height: 85vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: #008099;
+}
+
+.App-link {
+  color: #ef5855;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+div.color_palette {
+  background-color: #0b3847;
+  min-height: 15vh;
+}
+
+div.color_palette > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1,
+h2,
+h3 {
+  color: #a7c64d;
+}
+
+div.color_palette h3 {
+  color: #a7c64d;
+  margin: 0;
+  padding: 10px;
+}
+
+div.color_palette > div > div {
+  text-align: center;
+  width: 80px;
+  height: 50px;
+  border: 1px solid rgb(56, 56, 56);
+  margin: 0px 10px 10px 10px;
+}
+
+div.color_palette > div > div.background {
+  background-color: #4b7f7a;
+}
+
+div.color_palette > div > div.text {
+  background-color: #008099;
+}
+
+div.color_palette > div > div.highlight {
+  background-color: #a7c64d;
+}
+
+div.color_palette > div > div.link {
+  background-color: #ef5855;
+}

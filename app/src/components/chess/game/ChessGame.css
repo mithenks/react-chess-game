@@ -1,0 +1,61 @@
+div.chessgame {
+  border: 1px solid lightgray;
+  background-color: whitesmoke;
+  top: 50px;
+  left: 50px;
+  padding: 20px;
+}
+
+.board-row:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.square_b,
+.square_w {
+  background: #fff;
+  border: 1px solid #999;
+  float: left;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 34px;
+  height: 34px;
+  margin-right: -1px;
+  margin-top: -1px;
+  padding: 0;
+  text-align: center;
+  width: 34px;
+  position: relative;
+}
+
+.square_w span.info,
+.square_b span.info {
+  font-size: 0.3em;
+  line-height: 0.3em;
+  bottom: 0.3em;
+  right: 0.3em;
+  font-weight: normal;
+  position: absolute;
+}
+
+.square_b {
+  background: #bbb;
+}
+
+.square:focus {
+  outline: none;
+}
+
+.kbd-navigation .square:focus {
+  background: #ddd;
+}
+
+.game {
+  display: flex;
+  flex-direction: row;
+}
+
+.game-board > div {
+  margin-top: 20px;
+}
